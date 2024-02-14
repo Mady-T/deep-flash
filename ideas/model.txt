@@ -1,0 +1,5 @@
+* Problem: Size of deck input into model can vary
+* Solutions:
+    - Make input size fixed at 100 cards (say)
+        + If exceeding 100 cards, use heuristics to filter which cards to feed to model.
+        + If lower than 100 cards, (while training), input  cards spread randomly into input neurons to prevent model from becoming 'top-heavy'
